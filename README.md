@@ -28,4 +28,11 @@ Cognitoのカスタム認証でJWT認証をする
     - `アプリケーションの統合`を選択
     - `アプリケーションクライアントそ作成`する
     - 認証フローに`ALLOW_CUSTOM_AUTH`を選択する
+- 追加したアプリケーションクライアントのIDをメモっておく
 
+#### Frontend(React)のサンプルを動かす
+1. `cd react_sample`
+2. `.env.sample`をコピーして`.env`を作る
+3. `.env`にユーザープールIDとアプリケーションクライアントIDを設定
+4. `npm install`
+5. `npm start`
