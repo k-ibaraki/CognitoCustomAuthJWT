@@ -2,11 +2,11 @@ import { Serverless } from 'serverless/aws';
 import { config } from "dotenv";
 config(); // .envファイルを読み込む
 
-const awsProfile = process.env.AWS_PROFILE
+const awsProfile = process.env.AWS_PROFILE;
 const userPoolName = process.env.USER_POOL_NAME ?? "";
 const userPoolExisting = (process.env.USER_POOL_EXISTING == 'true');
 const slsServiceName = process.env.SLS_SERVICE_NAME ?? "";
-const jwtSecret = process.env.JWT_SECRET ?? ""
+const jwtSecret = process.env.JWT_SECRET ?? "";
 
 const serverlessConfiguration: Serverless = {
   service: slsServiceName,
